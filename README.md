@@ -191,7 +191,7 @@ Additional pages can be created by placing MDX files inside `contents/pages`, e.
 ```md
 ---
 title: About
-slug: "/about"
+slug: '/about'
 ---
 ```
 
@@ -217,15 +217,15 @@ After adjusting the configuration for `gatsby-omni-font-loader` you'll need to s
 Create a file at `src/gatsby-plugin-theme-ui/index.js` with the following contents:
 
 ```js
-import { merge } from "theme-ui";
-import originalTheme from "@lekoarts/gatsby-theme-minimal-blog/src/gatsby-plugin-theme-ui/index";
+import { merge } from 'theme-ui';
+import originalTheme from '@lekoarts/gatsby-theme-minimal-blog/src/gatsby-plugin-theme-ui/index';
 
 const theme = merge(originalTheme, {
   fonts: {
     body: `"Roboto Mono", monospace`,
   },
 });
-
+//
 export default theme;
 ```
 
@@ -236,8 +236,8 @@ As defined in the [Theme Specification](https://theme-ui.com/theme-spec#typograp
 Then you'd not overwrite `body` but add a `heading` key:
 
 ```js
-import { merge } from "theme-ui";
-import originalTheme from "@lekoarts/gatsby-theme-minimal-blog/src/gatsby-plugin-theme-ui/index";
+import { merge } from 'theme-ui';
+import originalTheme from '@lekoarts/gatsby-theme-minimal-blog/src/gatsby-plugin-theme-ui/index';
 
 const theme = merge(originalTheme, {
   fonts: {
